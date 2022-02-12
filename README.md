@@ -93,9 +93,9 @@ future bootups.
 # Bulk Tainer Telematics demo
 
 ## Running demo
-1. Change branche to `btt_demo`
+1. Change branche to `btt_demo`. Demo works now on mbed-os 6.14
 2. Setup workspace: `mbed deploy`
-3. Change your 
+3. Apply anjay patch for mbed-os 6.14: `cd ./anjay-mbedos/ && git apply ../anjay-mbedos.patch && cd ..`
 3. Set/change following configs in `mbed_app.json`:
     - device `endpoint_name` to `urn:dev:os:XXXXXXXXXXX`
     - set `psk_identity` to the same value as in `endpoint_name`
